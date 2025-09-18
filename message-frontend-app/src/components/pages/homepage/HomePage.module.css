@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.card {
+    text-align: center;
+    padding: 40px 60px;
+}
+
+.greenButton {
+    background-color: #52c41a;
+    border-color: #52c41a;
+}
