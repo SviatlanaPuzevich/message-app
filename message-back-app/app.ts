@@ -24,7 +24,7 @@ app.use(cors())
 app.use(express.static('dist'));
 app.use(express.json());
 
-app.use('/messages', messagesRouter);
+app.use('/api/messages', messagesRouter);
 
 app.use(unknownEndpoint);
 app.use(errorHandler);
