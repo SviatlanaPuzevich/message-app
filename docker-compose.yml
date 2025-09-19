@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./message-back-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./message-back-app/.env
+
+  frontend:
+    build:
+      context: ./message-frontend-app
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    env_file:
+      - ./message-frontend-app/.env
+    depends_on:
+      - backend
